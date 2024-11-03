@@ -1,10 +1,8 @@
 #!/usr/bin/env node
 
-import guessNumber from '../src/guess-number.js';
+import calc from '../src/calc.js';
 import runGame from '../src/index.js';
 
 console.log('Welcome to the Brain Games!');
-guessNumber();
-
-const [description, generateRound] = guessNumber();
+const [description, generateRound] = calc();
 runGame(description, generateRound);
