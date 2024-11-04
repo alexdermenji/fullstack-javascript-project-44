@@ -12,3 +12,16 @@ export const calculate = (num1, num2, operator) => {
       throw new Error(`Unknown operator: ${operator}`);
   }
 };
+
+export const gcd = (a, b) => {
+  let x = a;
+  let y = b;
+
+  while (y !== 0) {
+    const temp = y;
+    y = x % y;
+    x = temp;
+  }
+
+  return x;
+};
