@@ -3,6 +3,7 @@ import greeting from './cli.js';
 
 export default function runGame(description, generateRound) {
   const userName = greeting();
+  console.log(`Hello, ${userName}!`);
   console.log(description);
   for (let i = 0; i < 3; i += 1) {
     const [question, correctAnswer] = generateRound();
